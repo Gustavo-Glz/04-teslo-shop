@@ -8,6 +8,7 @@ import { FilesModule } from './files/files.module';
 import { join } from 'path';
 import { ServeStaticModule } from '@nestjs/serve-static'
 import { AuthModule } from './auth/auth.module';
+import { MessageWsModule } from './message-ws/message-ws.module';
 
 
 @Module({
@@ -30,7 +31,8 @@ import { AuthModule } from './auth/auth.module';
     CommonModule,
     SeedModule,
     FilesModule,
-    AuthModule
+    AuthModule,
+    MessageWsModule
   ],
   controllers: [],
   providers: [],
